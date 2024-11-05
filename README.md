@@ -19,7 +19,7 @@ This will create an executable file named gnss
 Running the Code  
 
 Run the executable with sudo to ensure it has permissions to access the serial port:  
-
+```bash  
 sudo ./gnss  
-
+```
 
