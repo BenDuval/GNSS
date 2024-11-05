@@ -1,8 +1,8 @@
 # GNSS
 
-How to Compile and Run the GNSS Code  
-Requirements  
+How to Compile and Run the GNSS Code 
 
+Requirements  
 Raspberry Pi with UART enabled  
 GNSS Module connected to the Pi
 C++ Compiler (g++)  
