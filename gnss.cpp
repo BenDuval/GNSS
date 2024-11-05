@@ -5,7 +5,7 @@
 #include <cstring>
 
 int main() {
-    int serial_port = open("/dev/serial0", O_RDWR | O_NOCTTY);
+    int serial_port = open("/dev/serial1", O_RDWR | O_NOCTTY);
 
     if (serial_port < 0) {
         std::cerr << "Error opening serial port\n";
@@ -20,10 +20,12 @@ int main() {
     tcsetattr(serial_port, TCSANOW, &tty);
 
     char buf[256];
-    int n = read(serial_port, buf, sizeof(buf) - 1);
-    if (n > 0) {
-        buf[n] = '\0';
-        std::cout << buf << std::endl;
+    while (true) { // Continuous reading
+        int n = read(serial_port, buf, sizeof(buf) - 1);
+        if (n > 0) {
+            buf[n] = '\0';
+            std::cout << buf;
+        }
     }
 
     close(serial_port);
