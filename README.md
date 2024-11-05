@@ -14,7 +14,10 @@ To compile the code, navigate to the directory containing gnss.cpp and run:
 g++ -o gnss gnss.cpp  
 ```
 
-This will create an executable file named gnss  
+This will create an executable file named 
+```bash  
+gnss  
+```
 
 Running the Code  
 
