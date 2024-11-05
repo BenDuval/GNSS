@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <fcntl.h>
 #include <unistd.h>
 #include <termios.h>
@@ -44,7 +43,9 @@ int main() {
         if (n > 0) {
             buf[n] = '\0';
             std::string line(buf);
-            parseNMEA(line);
+            
+            //parseNMEA(line);
+            std::cout << line << std::endl;
         }
     }
 
