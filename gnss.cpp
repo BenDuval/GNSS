@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <termios.h>
 #include <cstring>
-
+#include <sstream>
 
 void parseNMEA(const std::string &line) {
     if (line.rfind("$GNGGA", 0) == 0) {  // Check if line starts with $GNGGA
