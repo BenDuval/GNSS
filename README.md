@@ -10,7 +10,8 @@ C++ Compiler (g++)
 Compiling the Code  
 
 To compile the code, navigate to the directory containing gnss.cpp and run:  
-'''g++ -o gnss gnss.cpp'''  
+'''bash
+g++ -o gnss gnss.cpp  
 
 This will create an executable file named gnss  
 
